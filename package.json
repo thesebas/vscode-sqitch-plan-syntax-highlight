@@ -1,0 +1,34 @@
+{
+    "name": "thesebas-sqitch",
+    "displayName": "thesebas-sqitch",
+    "description": "sqitch plan support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "sqitch-plan",
+                "aliases": [
+                    "sqitch plan",
+                    "sqitch-plan"
+                ],
+                "extensions": [
+                    ".plan"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "sqitch-plan",
+                "scopeName": "text.sqitch",
+                "path": "./syntaxes/sqitch-plan.tmLanguage.json"
+            }
+        ]
+    }
+}
